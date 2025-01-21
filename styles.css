@@ -1,0 +1,113 @@
+ body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            min-height: 100vh;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #6a11cb, #2575fc);
+            color: white;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        .button-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            justify-content: center;
+        }
+
+        .btn {
+            padding: 15px 30px;
+            font-size: 16px;
+            font-weight: bold;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* Button Styles */
+        .btn-primary {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background-color: #45a049;
+            animation: bounce 0.6s infinite alternate;
+        }
+
+        .btn-secondary {
+            background-color: #008CBA;
+            color: white;
+        }
+
+        .btn-secondary:hover {
+            background-color: #007bb5;
+            animation: bounce 0.6s infinite alternate;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .btn-danger {
+            background-color: #f44336;
+            color: white;
+        }
+
+        .btn-danger:hover {
+            background-color: #da190b;
+            animation: bounce 0.6s infinite alternate;
+            transform: rotate(-2deg);
+        }
+
+        .btn-outline {
+            background-color: transparent;
+            border: 2px solid white;
+            color: white;
+        }
+
+        .btn-outline:hover {
+            background-color: white;
+            color: #333;
+            animation: bounce 0.6s infinite alternate;
+        }
+
+        .btn-gradient {
+            background: linear-gradient(45deg, #ff416c, #ff4b2b);
+            color: white;
+        }
+
+        .btn-gradient:hover {
+            background: linear-gradient(45deg, #ff4b2b, #ff416c);
+            animation: bounce 0.6s infinite alternate;
+            transform: scale(1.1) rotate(2deg);
+        }
+
+        .btn-glow {
+            background-color: #6a11cb;
+            color: white;
+            box-shadow: 0 4px 15px rgba(106, 17, 203, 0.75);
+        }
+
+        .btn-glow:hover {
+            box-shadow: 0 6px 20px rgba(106, 17, 203, 1);
+            animation: bounce 0.6s infinite alternate;
+            transform: translateY(-3px);
+        }
+
+        @keyframes bounce {
+            0% {
+                transform: translateY(0);
+            }
+            100% {
+                transform: translateY(-10px);
+            }
+        }
